@@ -81,4 +81,8 @@ enum nfcc_chip_variant {
 	NFCC_PN66T			= 0x18,	/**< NFCC PN66T */
 	NFCC_NOT_SUPPORTED	        = 0xFF	/**< NFCC is not supported */
 };
+#define LQ_DEBUG_NFC    1
+#define CHECK_NFC_NONE_NFC 1
+#ifdef CHECK_NFC_NONE_NFC
+extern char *saved_command_line;
 #endif
